@@ -1,0 +1,26 @@
+# ---- AÑADE ESTO AL FINAL DE TU ARCHIVO .gitignore ----
+pruebas.py
+__pycache__/
+# 1. Datos sensibles y configuración personal
+.env
+.secrets/
+config_local.py
+api_keys.py
+data
+
+# 2. Datos y outputs generados (si no quieres versionarlos)
+data/raw/            # Datos crudos o descargados
+data/processed/      # Datos procesados
+outputs/             # Resultados, gráficos, reports
+*.csv
+*.xlsx
+*.pkl
+*.parquet
+
+# 3. Entornos virtuales específicos (por si los creas dentro del proyecto)
+.venv/
+env/
+opt_strat_venv/
+
+# 4. Si usas Jupyter Notebooks (común en análisis)
+.ipynb_checkpoints
